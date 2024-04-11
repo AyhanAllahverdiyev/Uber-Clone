@@ -7,7 +7,7 @@ import { DestinationContext } from '../../context/DestinationContext';
 
 function InputItem({type}) {
   const [value, setValue]=useState(null)
-const [placeholder, setPlaceholder]=useState(type === 'source' ? 'Where are you?' : 'Where to?')
+  const [placeholder, setPlaceholder]=useState(type === 'source' ? 'Where are you?' : 'Where to?')
   const {source, setSource}=useContext(SourceContext)
   const {destination, setDestination}=useContext(DestinationContext)
 
@@ -42,7 +42,7 @@ const [placeholder, setPlaceholder]=useState(type === 'source' ? 'Where are you?
 
 return (
     <div className='bg-slate-200 p-3 rounded-lg mt-3 flex items-center gap-0' style={{ width: '100%' }}>
-      <Image src={type === 'source' ? '/source.png' : '/dest.png'} width={70} height={70}/>
+      <Image src={type === 'source' ? '/sourceNew.png' : '/dest.png'} width={40} height={40}/>
     
         <GooglePlacesAutocomplete
           selectProps={{
@@ -62,7 +62,7 @@ return (
               })
             }
           }}
-          // apiKey={process.env.NEXT_PUBLIC_GOOGLE_API_KEY}
+         
         />
  
     </div>

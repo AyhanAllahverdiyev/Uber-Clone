@@ -12,8 +12,9 @@ const CarListOptions = ({distance}) => {
     const router=useRouter();
 
   return (
-    <div className='mt-5 overflow-auto h-[250px]'>
-        <h2 className='text-[22px] font-bold'> Recommended</h2>
+    <div> 
+        <h2 className='text-[22px] font-bold text-center mt-5'> Recommended</h2>
+    <div className='overflow-auto h-[350px]'>
 
 
             {CarListData.map((item,index)=>(
@@ -32,6 +33,7 @@ const CarListOptions = ({distance}) => {
                 <h2> Make Payment for</h2>
                 <button onClick={()=>router.push('/payment?amount='+(selectedCar.amount*distance).toFixed(2))} className='p-3 bg-black text-white rounded-lg text-center'> Request{selectedCar.name}</button>
             </div> :  null}
+     </div>
      </div>
   )
 }

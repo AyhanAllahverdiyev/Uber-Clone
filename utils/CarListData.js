@@ -14,7 +14,7 @@ export const CarListData = [
         seat:4,
         desc:'Cars with extra legroom',
         amount:1.6,
-        img:'/car.png'
+        img:'/UberX.png'
     },
     {
         id:3,
@@ -22,7 +22,7 @@ export const CarListData = [
         seat:6,
         desc:'Affordable for groups up to 6',
         amount:2.0,
-        img:'/car.png'
+        img:'/UberBlackXL.png'
     },
     {
         id:4,
@@ -30,16 +30,9 @@ export const CarListData = [
         seat:4,
         desc:'Premium rides for VIPs',
         amount:3.0,
-        img:'/car.png'   
+        img:'/UberBlack.png'   
     },
-    {
-        id:5,
-        name:'Uber Pet',
-        seat:4,
-        desc:'Pet-friendly rides',
-        amount:1.5,
-        img:'/car.png'
-    }
+  
 
 
 ]

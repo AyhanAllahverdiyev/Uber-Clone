@@ -5,7 +5,7 @@ function Header() {
     const headerMenu=[
         {
             id:1,
-            name:'Ride',
+            name:'Trip',
             icon:'/taxi.jpeg'
         },
         {
@@ -15,18 +15,18 @@ function Header() {
         }
     ]
   return (
-    <div className='p-5 pb-3 pl-10 border-b-[4px] border-gray-200 flex items-center justify-between'>
-        <div className='flex gap-24 items-center'> 
-      <Image src="/Uber_logo_2018.png"
-        width={70} height={70}
+    <div className='p-5 ml-5 pb-3 pl-10 border-b-[4px] border-gray-200 flex items-center justify-between'>
+        <div className='flex gap-10 items-center'> 
+      <Image src="/hero-image.png"
+        width={90} height={90}
         alt='Logo'/>
         <div className='flex gap-6 items-center'>
              {headerMenu.map((item)=>(
                  <div className='flex gap-2 items-center' >
                 <Image src={item.icon}
-                width={17} height={17}
+                width={20} height={20}
                 alt='icon'/>
-                <h2 className='text-[14px] font-medium'>{item.name}</h2>
+                <h2 className='text-[18px] font-medium'>{item.name}</h2>
             </div>
           ))}</div>
           </div>
